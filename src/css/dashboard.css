@@ -1,0 +1,59 @@
+.dashboard{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: auto;
+}
+
+.background{
+    /* display: block;
+    height: max-content; */
+    background-image: url('../images/restaurant-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: visible;
+    /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
+#bg {
+    position: fixed; 
+    /* top: 0; 
+    left: 0;  */
+  
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    /* width: 100vw; */
+    /* height: 100vh; */
+  }
+
+  .centered {
+    position: absolute;
+    font-size: 50px;
+    color: aqua;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .dialog-enter {
+    opacity: 0.01;
+    transform: scale(1.1);
+  }
+  
+  .dialog-enter-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: all 1000ms;
+  }
